@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "a9-grandfather-inheritance": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "a9-grandfather-inheritance"
+    }
+  },
+  "defaultProject": "a9-grandfather-inheritance",
+  "cli": {
+    "analytics": "a96dbac2-3e78-4695-b2af-f5c1be398218"
+  }
 }
