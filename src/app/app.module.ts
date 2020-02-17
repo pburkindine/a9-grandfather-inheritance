@@ -3,11 +3,9 @@ import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
 import { ChildComponent } from "./child/child.component";
-import { ParentComponent } from './parent/parent.component';
-import { GrandparentComponent } from './grandparent/grandparent.component';
 
 @NgModule({
-  declarations: [AppComponent, ChildComponent, ParentComponent, GrandparentComponent],
+  declarations: [AppComponent, ChildComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]

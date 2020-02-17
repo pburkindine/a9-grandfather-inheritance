@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Input, Directive } from "@angular/core";
+import { GrandparentComponentBase } from "../../module2/grandparent/grandparent.component";
+import { InstanceClass1 } from "./instant-class";
 
-@Component({
-  selector: 'app-parent',
-  templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.scss']
-})
-export class ParentComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+@Directive()
+export abstract class ParentComponentBase extends GrandparentComponentBase<
+  InstanceClass1
+> {
+  @Input() foo: number;
 }
